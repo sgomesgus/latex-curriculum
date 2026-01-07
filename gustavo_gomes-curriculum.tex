@@ -1,3 +1,4 @@
+
 \documentclass[a4paper,10pt]{article}
 
 % --- PACOTES ---
@@ -9,10 +10,10 @@
 \usepackage{hyperref}
 \usepackage{xurl}
 \usepackage{titlesec}
+\usepackage{xcolor}
 
 % --- CONFIGURAÇÕES ---
 \geometry{top=2cm, bottom=2cm, left=2cm, right=2cm}
-\pagestyle{empty}
 
 \hypersetup{
     pdftitle={CV - Gustavo Gomes},
@@ -21,6 +22,7 @@
 
 \setcounter{secnumdepth}{0}
 
+% --- FORMATANDO SEÇÕES ---
 \titleformat{\section}
   {\Large\bfseries}
   {}
@@ -33,46 +35,54 @@
 
 % --- CABEÇALHO ---
 \begin{center}
-    {\LARGE \textbf{Gustavo Gomes}}\\[0.1cm]
-    Caieiras, SP\\
+    {\LARGE \textbf{Gustavo Gomes}}\\[0.1cm]    Caieiras, SP\\
     \href{mailto:sgomesgus@gmail.com}{sgomesgus@gmail.com} ~|~ 
     \href{https://www.linkedin.com/in/sgomesgus}{linkedin.com/in/sgomesgus} ~|~ 
-    \href{https://github.com/sgomesgus}{github.com/sgomesgus}
+    \href{https://github.com/sgomesgus}{github.com/sgomesgus} ~|~ 
+    \href{https://wa.me/5511939546477}{+55 11 93954-6477}
 \end{center}
+
+\section{Resumo Profissional}
+Estagiário de TI com atuação prática em ambientes financeiros críticos, operando \textbf{Windows Server, Linux e Cloud (Azure/GCP)}. Forte experiência em \textbf{automação com PowerShell}, administração de servidores, controle de identidades e acessos e integração de sistemas legados, com foco em \textbf{confiabilidade operacional, segurança e mitigação de risco em produção}.
 
 % --- EDUCAÇÃO ---
 \section{Educação}
-\subsection{\textbf{Defesa Cibernética – FATEC Jundiaí (2024 - 2026)}}
+\textbf{Tecnólogo em Defesa Cibernética} \hfill \textit{02/2024 - 12/2026}\\
+FATEC Jundiaí
 \begin{itemize} 
-    \item Programação e Automação para Segurança da Informação
-    \item Redes de Computadores, Sistemas Operacionais e Cloud Computing
-    \item Segurança da Informação e Governança de TI
+    \item Programação e Automação para Segurança da Informação.
+    \item Redes de Computadores, Sistemas Operacionais e Computação em Nuvem.
+    \item Segurança da Informação e Governança de TI.
 \end{itemize}
 
 % --- EXPERIÊNCIA ---
 \section{Experiência}
-
-\subsection{\textbf{Estagiário de TI -- ASA (04/2025 - Presente)}}
+\textbf{Estagiário de TI} \hfill \textit{04/2025 - Presente}\\
+ASA Asset
 \begin{itemize} 
-    \item Automatização de rotinas críticas do core bancário via Batch Scripting em Windows Server na GCP
-    \item Desenvolvimento de scripts SQL garantindo integridade e eficiência de dados
-    \item Administração de servidores e gerenciamento de usuários no Active Directory
-    \item Documentação técnica e deploy de atualizações em produção
-    \item Testes em APIs SOAP e REST, validando XML/JSON e integração com sistemas internos
+    \item Automatizou rotinas críticas do core bancário utilizando \textbf{PowerShell em Windows Server na GCP}, com orquestração via \textbf{Control-M}, integrando scripts a janelas de execução controladas e validações de retorno, reduzindo tarefas manuais em 60\% e risco operacional em 40\%.
+    \item Desenvolveu e manteve \textbf{scripts SQL} para validação e manipulação de dados em sistemas legados, assegurando integridade, consistência e eficiência das operações.
+    \item Realizou \textbf{administração de servidores} e \textbf{gestão de usuários} em sistemas corporativos legados, garantindo controle de acesso adequado e continuidade dos serviços.
+    \item Elaborou \textbf{documentação técnica} e executou \textbf{deploys controlados de atualizações}, apoiando homologações, padronização operacional e redução de falhas em produção.
+    \item Executou \textbf{testes em APIs SOAP e REST} para validação de integrações de sistemas legados, analisando payloads \textbf{XML/JSON} e assegurando comunicação correta entre sistemas.
 \end{itemize}
+
+
 
 % --- HABILIDADES ---
 \section{Habilidades}
 \begin{itemize}
-    \item \textbf{Linguagens:} Python, Bash, PowerShell
-    \item \textbf{Sistemas Operacionais:} Windows Server, Linux
-    \item \textbf{Bancos de Dados:} SQL Server, MySQL
-    \item \textbf{Cloud:} Azure, GCP
-    \item \textbf{Redes:} TCP/IP, DNS, DHCP, VLANs
-    \item \textbf{Monitoramento:} Wireshark, Nmap, Zabbix
-    \item \textbf{Metodologias:} Agile, Scrum, Kanban
-    \item \textbf{Segurança e Compliance:} ISO 27001, LGPD
-    \item \textbf{Idiomas:} Português (nativo), Inglês (fluente)
+    \item \textbf{Automação \& Scripting:} PowerShell, Bash, Python.
+    \item \textbf{Sistemas Operacionais:} Windows Server, Linux.
+    \item \textbf{Cloud \& Identidade:} Google Cloud Platform, Microsoft Azure, Microsoft Entra ID, IAM, RBAC.
+    \item \textbf{Redes \& Infraestrutura:} TCP/IP, DNS, DHCP, VLANs, Apache Tomcat, Control-M.
+    \item \textbf{Monitoramento \& Observabilidade:} Zabbix, Grafana.
+    \item \textbf{Idiomas:} Português (nativo), Inglês (C2).
+\end{itemize}
+% --- CERTIFICAÇÕES ---
+\section{Certificações}
+\begin{itemize}
+    \item Microsoft SC-900 -- Security, Compliance, and Identity Fundamentals \textit{(em andamento)}
 \end{itemize}
 
 \end{document}
